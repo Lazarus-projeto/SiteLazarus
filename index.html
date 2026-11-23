@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lazarus - Assessoria e Projetos</title>
+
+    <link rel="icon" type="image/png" href="./imagens/logos/logoF.png" />
+
     <!-- Ícones FontAwesome -->
     <link
       rel="stylesheet"
@@ -103,7 +106,9 @@
           <div class="eco-card eco-7ato">
             <div
               class="eco-card-header-img eco-logo-box"
-              style="background-image: url(&quot;imagens/logos/logoOng.jpeg&quot;)"
+              style="
+                background-image: url(&quot;imagens/logos/logoOng.jpeg&quot;);
+              "
               role="img"
               aria-label="ONG 7º Ato"
             >
@@ -190,7 +195,9 @@
             <div class="card-captacao">
               <div
                 class="card-captacao-img logo-img"
-                style="background-image: url(&quot;imagens/cards/doutores.jpeg&quot;)"
+                style="
+                  background-image: url(&quot;imagens/cards/doutores.jpeg&quot;);
+                "
                 role="img"
                 aria-label="Doutores Pititicos"
               >
@@ -214,7 +221,9 @@
             <div class="card-captacao">
               <div
                 class="card-captacao-img logo-img"
-                style="background-image: url(&quot;imagens/cards/mundoLogo.jpeg&quot;)"
+                style="
+                  background-image: url(&quot;imagens/cards/mundoLogo.jpeg&quot;);
+                "
                 role="img"
                 aria-label="Mundo Encantado"
               >
@@ -239,7 +248,9 @@
             <div class="card-captacao">
               <div
                 class="card-captacao-img logo-img"
-                style="background-image: url(&quot;imagens/cards/logoCultura.jpeg&quot;)"
+                style="
+                  background-image: url(&quot;imagens/cards/logoCultura.jpeg&quot;);
+                "
                 role="img"
                 aria-label="Cultura Integrativa – Arte, Música e Dança"
               >
@@ -685,24 +696,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script>
-      document.querySelectorAll("[data-projeto]").forEach(function (btn) {
-        btn.addEventListener("click", function () {
-          var m = document.getElementById("modal-" + btn.dataset.projeto);
-          if (m && m.showModal) m.showModal();
-        });
-      });
-      document.querySelectorAll(".projeto-modal").forEach(function (m) {
-        m.addEventListener("click", function (e) {
-          if (e.target === m) m.close();
-        });
-        m.querySelector(".projeto-modal-close").addEventListener(
-          "click",
-          function () {
-            m.close();
-          },
-        );
-      });
-    </script>
   </body>
 </html>
